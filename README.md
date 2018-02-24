@@ -1,5 +1,8 @@
 # Cascaded Refinement Networks
 
+Synthesise photographic image from semantic map using Cascaded Refinement Netowork and PyTorch. 
+
+<img src="https://s17.postimg.org/cnjnyds8f/image.png" width="600"><img src="https://s17.postimg.org/h9fs6qt73/image.png" width="600">
 
 
 ## Usage
@@ -13,3 +16,7 @@ python semantic2labels.py
 python train.py
 python eval.py
 ```
+
+<img src="https://s17.postimg.org/bl9hg0h6n/image.png" width="600"><img src="https://s17.postimg.org/57kecrzfz/36a.png" width="600">
+
+<img src="https://s17.postimg.org/xvxcg748v/image.png" width="600"><img src="https://s17.postimg.org/68kn23qrz/53a.png" width="600">
