@@ -7,6 +7,11 @@ Goal is to synthesise photographic images from semantic maps.
 
 <img src="https://s17.postimg.org/cnjnyds8f/image.png" width="600"><img src="https://s17.postimg.org/h9fs6qt73/image.png" width="600">
 
+<img src="https://s17.postimg.org/nadh4dden/crn.png" width="800">
+<img src="https://s17.postimg.org/wux3r9i67/image.png" width="300">
+<img src="https://s17.postimg.org/g8fjhowsv/loss.png" width="700">
+
+
 
 ## Usage
 
@@ -19,6 +24,7 @@ python semantic2labels.py
 python train.py
 python eval.py
 ```
+
 
 <img src="https://s17.postimg.org/bl9hg0h6n/image.png" width="600"><img src="https://s17.postimg.org/57kecrzfz/36a.png" width="600">
 
