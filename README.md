@@ -1,4 +1,4 @@
-# Cascaded Refinement Networks
+# Cascaded Refinement Network
 
 
 PyTorch implementation of paper: Qifeng Chen and Vladlen Koltun. Photographic Image Synthesis with Cascaded Refinement Networks.
