@@ -13,6 +13,11 @@ start_shape = (8, 4)
 final_shape = (start_shape[0]*2**(modules_num-1), start_shape[1]*2**(modules_num-1))
 semantic_palette = [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156], [190, 153, 153], [153, 153, 153], [250, 170, 30], [220, 220, 0], [107, 142, 35], [152, 251, 152], [70, 130, 180], [220, 20, 60], [255, 0, 0], [0, 0, 142], [0, 0, 70], [0, 60, 100], [0, 80, 100], [0, 0, 230], [119, 11, 32]]
 
+def make_dir(directory):
+
+	if not os.path.exists(directory):
+	os.makedirs(directory)
+
 def get_semantic_paths(root_dir, first_n = 3):
 	
 	img_paths = []
@@ -59,6 +64,8 @@ def preprocess_semantic(semantic):
 #----------------------------------------------------------------------------------------------
 
 if __name__ == "__main__":
+
+	make_dir(result_dir)
 
 	generator = torch.load(model_path)
 

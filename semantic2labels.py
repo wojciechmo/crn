@@ -12,6 +12,11 @@ start_shape = (8, 4)
 final_shape = (start_shape[0]*2**(modules_num-1), start_shape[1]*2**(modules_num-1))
 palette = [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156], [190, 153, 153], [153, 153, 153], [250, 170, 30], [220, 220, 0], [107, 142, 35], [152, 251, 152], [70, 130, 180], [220, 20, 60], [255, 0, 0], [0, 0, 142], [0, 0, 70], [0, 60, 100], [0, 80, 100], [0, 0, 230], [119, 11, 32]]
 
+def make_dir(directory):
+
+	if not os.path.exists(directory):
+	os.makedirs(directory)
+
 def process_dataset(in_dir, out_dir, choice):
 
 	for city_name in os.listdir(in_dir):
@@ -56,6 +61,8 @@ def process_dataset(in_dir, out_dir, choice):
 				np.savez(out_label_path, *modules_masks)
 				
 if __name__ == "__main__":
-				
+			
+	make_dir(train_images_dir)
+	make_dir(train_labels_dir)
 	process_dataset(cityscapes_images_dir, train_images_dir, 'image')
 	process_dataset(cityscapes_labels_dir, train_labels_dir, 'label')

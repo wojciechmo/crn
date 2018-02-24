@@ -331,7 +331,14 @@ def diverse_loss(gens_layers, img_layers, mask_layers):
 #----------------------------------------- training -------------------------------------------	
 #----------------------------------------------------------------------------------------------
 
+def make_dir(directory):
+
+	if not os.path.exists(directory):
+	os.makedirs(directory)
+
 if __name__ == "__main__":
+	
+	make_dir(model_path)
 	
 	net = Net().cuda()
 	vgg19 = VGG19(vgg19_path).cuda()
