@@ -16,7 +16,7 @@ semantic_palette = [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156
 def make_dir(directory):
 
 	if not os.path.exists(directory):
-	os.makedirs(directory)
+		os.makedirs(directory)
 
 def get_semantic_paths(root_dir, first_n = 3):
 	

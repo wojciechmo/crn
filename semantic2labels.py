@@ -15,7 +15,7 @@ palette = [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156], [190, 
 def make_dir(directory):
 
 	if not os.path.exists(directory):
-	os.makedirs(directory)
+		os.makedirs(directory)
 
 def process_dataset(in_dir, out_dir, choice):
 

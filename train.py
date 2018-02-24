@@ -334,7 +334,7 @@ def diverse_loss(gens_layers, img_layers, mask_layers):
 def make_dir(directory):
 
 	if not os.path.exists(directory):
-	os.makedirs(directory)
+		os.makedirs(directory)
 
 if __name__ == "__main__":
 	
