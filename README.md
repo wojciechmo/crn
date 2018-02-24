@@ -1,6 +1,8 @@
 # Cascaded Refinement Networks
 
-Synthesise photographic image from semantic map using Cascaded Refinement Netowork and PyTorch. 
+
+PyTorch implementation of paper Photographic Image Synthesis with Cascaded Refinement Networks.
+Goal is to synthesise photographic images from semantic maps. 
 
 <img src="https://s17.postimg.org/cnjnyds8f/image.png" width="600"><img src="https://s17.postimg.org/h9fs6qt73/image.png" width="600">
 
